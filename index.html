@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
+
+
+    <!--CSS-->
     <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Favicon- better would be to design own logo-->
-    <link rel="icon" type="image/x-icon" href="images/aron1.jpeg">
+    <!--Favicon; better would be to design own logo-->
+    <link rel="icon" type="image/x-icon" href="aron1.jpeg">
     
     <title>Gröipschi</title>
   
   
 
   </head>
+  <!--Container-Flex-->
+  <body class = "container">
 
-  <body>
-
-  <h1 class="centered" style="font-size: 40px;">Wiukomme bim Gröipschi!</h1>
+      
+    
+    <!--Header-->
+    <div class = header>
+      <h1 class="centered" style="font-size: 40px;">Wiukomme bim Gröipschi!</h1>
   
-  <h2 class="centered">Fougendi Dienschtleischtige chani dr aabiete:</h2>
+      <h2 class="centered">Fougendi Dienschtleischtige chani dr aabiete:</h2>
+    </div>
 
+
+    <!--Body-->
+    <div class = "center">
     <!--Jellyfin-->
     <figure class="item">
         <a href= "https://groeipschi.internet-box.ch/jellyfin"><img src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/c6d7b1fc16c8d62df9125d6463f3d404e0e81bae/branding/tizen/logo.svg" alt="Logo of Jellyfin"/></a>
         <figcaption class="caption"><a href="https://groeipschi.internet-box.ch/jellyfin">Medieserver</a></figcaption>
     </figure>
+
     <!--Navidrome-->
     <figure class="item">
         <a href="https://groeipschi.internet-box.ch/navidrome"><img src="https://yunohost.org/user/images/navidrome_logo.png" alt="Logo of Navidrome"/></a>
         <figcaption class="caption"><a href="https://groeipschi.internet-box.ch/navidrome">Navidrome(Android Apps: Subtracks, Ultrasonic)</a></figcaption>
     </figure>
      <!--Nextcloud-->
+
     <figure class="item">
         <a href="https://groeipschi.internet-box.ch/nextcloud"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Nextcloud_Logo.svg" alt="Logo of Nextcloud"></a>
         <figcaption class="caption"><a href="https://groeipschi.internet-box.ch/nextcloud">Nextcloud*</a></figcaption>
     </figure>
     <!--Transmission-->
+
     <figure class="item">
        <a href="https://groeipschi.internet-box.ch/transmission/web/"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Transmission_Icon.svg" alt="Logo of Transmission"></a>
         <figcaption class="caption"><a href="https://groeipschi.internet-box.ch/transmission/web/">Transmission*</a></figcaption>
     </figure>
+    </div>
 
 
-  <p>"Monero node:groeipschi.internet-box.ch:18089, Android App drzue wär <a href="https://www.monerujo.io/" style="padding-bottom: 0%;">Monerujo</a></p>
-   <figure><img src="https://www.monerujo.io/img/gunther-hello-800x.gif" alt="Gif of Gunther of Monerujo" class="item" style="float:right; padding-right: 30%;"></figure>
+    <!--Bottom-->
+  <div class = "bottom">
+    <p>"Monero node:groeipschi.internet-box.ch:18089, Android App drzue wär <a href="https://www.monerujo.io/" style="padding-bottom: 0%;">Monerujo</a></p>
+    <figure><img src="https://www.monerujo.io/img/gunther-hello-800x.gif" alt="Gif of Gunther of Monerujo" class="item" style="float:right; padding-right: 30%;"></figure>
   
-  <p><strong style="font-size: 30px;">*</strong> Gitz o aus App!</p>
+
+    <!--Canvas-->
+    <canvas id = "canvas" width = "100" height="100">
+
+      Alternate text if canvas cannot load.
+    </canvas>
+
+    <!--JS-->
+    <script type="text/javascript" src = "script.js"></script>
+
+
+
+
+    <p><strong style="font-size: 30px;">*</strong> Gitz o aus App!</p>
   
   
-  <p><em>Merci dassd myni Syte bruchsch.</em></p>
-  <p><em>XMR: 89rXJxbVQkdTJJht7CwhnfEc1GdErRPnn17yimvuMhM2KUae6iUCaAwDAAYbEu1qceFK5SBdvWMzjPytF8UU9X1kNFETsvd</em></p>
-  
+    <p><em>Merci dassd myni Syte bruchsch.</em></p>
+    <p><em>XMR: 89rXJxbVQkdTJJht7CwhnfEc1GdErRPnn17yimvuMhM2KUae6iUCaAwDAAYbEu1qceFK5SBdvWMzjPytF8UU9X1kNFETsvd</em></p>
+    </div>
+
+
+
   <footer>Bi Frage, wenn öppis nid geit, oder wed es Login möchtsch, schryb mer jederzyt ruhig uf Signal.
-    Myni E-Mail isch <a href="mailto:ferox7878@gmail.com">ferox7878 (ätt) gmail (punkt) com.</a></footer>
+    Myni E-Mail isch <a style = "color:seashell" href="mailto:ferox7878@gmail.com">ferox7878 (ätt) gmail (punkt) com.</a></footer>
   
   </body>
   </html>
