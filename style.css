@@ -1,6 +1,9 @@
 
 *{
     font-size:20px ;
+   
+    transition: background-color 0.6s ease, color 1s ease;
+      
 }
 
 .container {
@@ -46,13 +49,13 @@
 body {
           width: 100vw;
           font-family: Tahoma, Verdana, Arial, sans-serif;
-      }
+}
 a {
             color:black;
             border: 0%;
             padding-bottom: 70px;
             text-decoration: none;
-  }
+}
 
 
 
@@ -124,3 +127,8 @@ img {
     /* Make the caption a block so it occupies its own line. */
     display: block;
     }
+
+.buttons{
+
+    color: seashell;
+}
