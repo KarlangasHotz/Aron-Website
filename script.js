@@ -175,9 +175,26 @@ function toggleButtons(value, button){
     }
 };
 
+let clickCounter = 0;
+
 buttonnight.addEventListener("click", function (){
-    toggleButtons(1, buttonnight)
+
+
+    for (i = 0; i < 11; i++){
+        
+        if (clickCounter  === 1|3|5|7|9){
+            toggleButtons(1, buttonnight)
+        }
+        else {
+            toggleButtons(0, buttonnight)
+
+        }
+        clickCounter += 1;
+    }
+
 })
+console.log(clickCounter)
+
 buttonnight.addEventListener("click", function (){
     toggleButtons(0, buttonnight)
 })
